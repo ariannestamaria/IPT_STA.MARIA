@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data Form</title>
+    <style>
+    	body {
+    	font-family: Arial, sans-serif;
+    	margin: 20px;
+    	background-color: #f4f4f4;
+    	}
+    	
+    	.form-container {
+    	max-width: 800px;
+    	margin: auto;
+    	background-color: white;
+    	padding: 20px;
+    	border: 2px solid black;
+    	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    	position: relative; /* Enable absolute positioning */
+    	}
+    	
+    	h1 {
+    	text-align: center;
+    	font-size: 48px; /* Increase the font size */
+    	font-weight: 900; /* Make it bolder */
+    	margin-bottom: 20px;
+    	font-family: Arial, sans-serif; /* Optional: Set the font family */
+    	text-transform: uppercase; /* Make the text uppercase */
+    	}
+    	
+    	
+    	.image-box {
+    	position: absolute;
+    	top: 20px;
+    	right: 20px;
+    	width: 100px;  /* Set width to 200 pixels */
+    	height: 100px; /* Set height to 200 pixels */
+    	border: 1px solid black; /* Solid border */
+    	border-radius: 5px; /* Rounded corners (if needed) */
+    	background-color: #f9f9f9; /* Optional: Light background color */
+    	}
+    	
+    	
+    	.section {
+    	margin-bottom: 20px;
+    	}
+    	
+    	h2 {
+    	background-color: black;
+    	color: white;
+    	padding: 5px;
+    	margin-bottom: 10px;
+    	font-size: 18px;
+    	border-radius: 5px; 
+    	}
+    	
+    	.certification-container {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: flex-start; /* Align items to the top */
+    	margin-top: 20px; /* Add space above the container */
+    	}
+    	
+    	.certification-container {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: flex-start;
+    	margin-top: 20px;
+    	}
+    	
+    	.small-table-container {
+    	width: 350px;
+    	padding: 10px;
+    	border-radius: 5px;
+    	background-color: #f9f9f9;
+    	font-size: 12px;
+    	border: 1px solid #ccc;
+    	margin-right: 20px;
+    	}
+    	
+    	.small-table-container table {
+    	width: 100%;
+    	}
+    	
+    	.small-table-container td {
+    	padding: 3px 0;
+    	vertical-align: top;
+    	}
+    	
+    	.certification-text {
+    	width: 400px;
+    	font-size: 12px;
+    	line-height: 1.5;
+    	}
+    	
+    	.signature-line {
+    	margin-top: 40px;
+    	text-align: center;
+    	}
+    	
+    	.signature-line p {
+    	margin: 0;
+    	font-size: 14px;
+    	}
+    	
+    	.table-container {
+    	border: 1px solid #ccc; /* Light border around each table container */
+    	padding: 10px;          /* Padding inside the container */
+    	border-radius: 5px;    /* Rounded corners */
+    	background-color: #f9f9f9; /* Light background color */
+    	}
+    	
+    	table {
+    	width: 100%;
+    	border-collapse: collapse;
+    	}
+    	
+    	td {
+    	padding: 5px;
+    	vertical-align: top;
+    	font-size: 14px;
+    	}
+    	
+    	input[type="text"] {
+    	width: 95%;
+    	padding: 5px;
+    	border: 1px solid black;
+    	box-sizing: border-box;
+    	}
+    	
+    	.signature {
+    	text-align: right;
+    	margin-top: 20px;
+    	}
+    	
+    	.signature p {
+    	font-size: 16px;
+    	font-weight: bold;
+    	}
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>BIO-DATA</h1>
+        <div class="image-box"></div>
+
+        <div class="section">
+            <h2>Personal Data</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td>Position Desired</td>
+                        <td>: _______________________</td>
+                        <td>Date:</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>: _______________________</td>
+                        <td>Gender</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>City Address</td>
+                        <td>: _______________________</td>
+                        <td>Provincial Address:</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Telephone</td>
+                        <td>: _______________________</td>
+                        <td>Cellphone:</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Email Address</td>
+                        <td>: _______________________</td>
+                        <td>Date of Birth:</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Birth Place</td>
+                        <td>: _______________________</td>
+                        <td>Civil Status:</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Height</td>
+                        <td>: _______________________</td>
+                        <td>Weight</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Citizenship</td>
+                        <td>: _______________________</td>
+                        <td>Religion:</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Spouse</td>
+                        <td>: _______________________</td>
+                        <td>Occupation</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Father's Name</td>
+                        <td>: _______________________</td>
+                        <td>Occupation</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Mother's Name</td>
+                        <td>: _______________________</td>
+                        <td>Occupation</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Language spoken and written : ______________________________________________________________________</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Person to be contacted in case of emergency : _______________________________________________________</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Educational Background</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td>Elementary</td>
+                        <td>: _______________________</td>
+                        <td>Year Graduated</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>High School</td>
+                        <td>: _______________________</td>
+                        <td>Year Graduated</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>College</td>
+                        <td>: _______________________</td>
+                        <td>Year Graduated</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Degree Received</td>
+                        <td>: _______________________________________________________</td>
+                    </tr>
+                    <tr>
+                        <td>Special Skills</td>
+                        <td>: _______________________________________________________</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Employment Record</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td>Company Name</td>
+                        <td>: _______________________</td>
+                        <td>Position</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>From</td>
+                        <td>: _______________________</td>
+                        <td>To</td>
+                        <td>: _______________________</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Character Reference</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>: _______________________</td>
+                        <td>Company</td>
+                        <td>: _______________________</td>
+                    </tr>
+                    <tr>
+                        <td>Position</td>
+                        <td>: _______________________</td>
+                        <td>Contact No.</td>
+                        <td>: _______________________</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="certification-container">
+                <div class="small-table-container">
+                    <table>
+                        <tr>
+                            <td>Res. Cert. No.</td>
+                            <td>: _______________________</td>
+                        </tr>
+                        <tr>
+                            <td>Issued At</td>
+                            <td>: _______________________</td>
+                        </tr>
+                        <tr>
+                            <td>Issued On</td>
+                            <td>: _______________________</td>
+                        </tr>
+                        <tr>
+                            <td>SSS</td>
+                            <td>: _______________________</td>
+                        </tr>
+                        <tr>
+                            <td>TIN</td>
+                            <td>: _______________________</td>
+                        </tr>
+                        <tr>
+                            <td>NBI No.</td>
+                            <td>: _______________________</td>
+                        </tr>
+                        <tr>
+                            <td>Passport No.</td>
+                            <td>: _______________________</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="certification-text">
+                    <p>
+                        I hereby certify the above information is true and correct to the best of my knowledge and belief.
+                        I also understand that any misinterpretation will be considered reason for withdrawal of an offer
+                        or subsequent dismissal if employed.
+                    </p>
+                    <div class="signature-line">
+                        <p>_______________________________</p>
+                        <p>Applicant's Signature:</p>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+
+</body>
+</html>
